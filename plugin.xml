@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-cache-clear"
+    version="1.1.0">
+
+    <name>Cordova Cache Clear</name>
+    <keywords>cordova,webview,cache,clear,android,ios</keywords>
+    <description>This is a WebView cache plugin for Cordova 6.1.1+ supporting Android (>=4.1) and iOS(>=6.0). It allows to clear the cordova webview cache.</description>
+
+    <repo>https://github.com/anrip/cordova-plugin-cache-clear.git</repo>
+    <issue>https://github.com/anrip/cordova-plugin-cache-clear/issues</issue>
+    <author email="mail@anrip.com" href="http://www.anrip.com">Anrip Wong</author>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=6.1.1" />
+    </engines>
+
+    <platform name="android">
+        <js-module src="www/Cache.js" name="Cache">
+            <!-- will be available under window.cache -->
+            <clobbers target="cache" />
+        </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Cache" >
+                <param name="android-package" value="com.anrip.cordova.Cache"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Cache.java" target-dir="src/com/anrip/cordova" />
+    </platform>
+
+    <platform name="ios">
+        <js-module src="www/Cache.js" name="Cache">
+            <!-- will be available under window.cache -->
+            <clobbers target="cache" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="Cache">
+                <param name="ios-package" value="Cache" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Cache.h" />
+        <source-file src="src/ios/Cache.m" />
+    </platform>
+
+</plugin>

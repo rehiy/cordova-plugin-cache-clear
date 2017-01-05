@@ -1,0 +1,40 @@
+{
+    "name": "cordova-plugin-cache-clear",
+    "version": "1.1.0",
+    "author": {
+        "name": "Anrip Wong",
+        "email": "mail@anrip.com",
+        "url": "http://www.anrip.com/"
+    },
+    "description": "This is a WebView cache plugin for Cordova 6.1.1+ supporting Android (>=4.1) and iOS(>=6.0). It allows to clear the cordova webview cache.",
+    "cordova": {
+        "id": "cordova-plugin-cache-clear",
+        "platforms": [
+            "ios",
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anrip/cordova-plugin-cache-clear.git"
+    },
+    "keywords": [
+        "cordova",
+        "webview",
+        "cache",
+        "clear",
+        "ios",
+        "android",
+        "cordova-ios",
+        "cordova-android"
+    ],
+    "engines": [{
+        "name": "cordova",
+        "version": ">=6.1.1"
+    }],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anrip/cordova-plugin-cache-clear/issues"
+    },
+    "homepage": "https://github.com/anrip/cordova-plugin-cache-clear#readme"
+}
