@@ -33,4 +33,5 @@ document.addEventListener('deviceready', function() {
 Android vs. iOS
 ======
 
-On iOS, cache.clear deletes temporary files (images that have been downloaded by the app). However, on Android, cache.clear also deletes all local, persistent data (such as stored files and any data saved to localStorage).
+On iOS, cache.clear deletes temporary files (images that have been downloaded by the app).
+On Android, cache.clear also deletes all local, persistent data (such as stored files and any data saved to localStorage).
