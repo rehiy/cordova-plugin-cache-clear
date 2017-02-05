@@ -6,7 +6,7 @@ It allows to clear the cordova webview cache.
 
 There is one method:
 
-* clear(successCallback, errorCallback)
+* CacheClear(successCallback, errorCallback)
 
 Installation
 ======
@@ -26,12 +26,12 @@ document.addEventListener('deviceready', function() {
     var error = function(status) {
         alert('Error: ' + status);
     };
-    window.cache.clear(success, error);
+    window.CacheClear(success, error);
 });
 ```
 
 Android vs. iOS
 ======
 
-On iOS, cache.clear deletes temporary files (images that have been downloaded by the app).
-On Android, cache.clear also deletes all local, persistent data (such as stored files and any data saved to localStorage).
+On iOS, CacheClear deletes temporary files (images that have been downloaded by the app).
+On Android, CacheClear also deletes all local, persistent data (such as stored files and any data saved to localStorage).
