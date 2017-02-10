@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-plugin-cache-clear" version="1.3.5"
+<plugin id="cordova-plugin-cache-clear" version="1.3.6"
     xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -40,8 +40,8 @@
         </js-module>
 
         <config-file target="config.xml" parent="/*">
-            <feature name="Cache">
-                <param name="ios-package" value="Cache" />
+            <feature name="CacheClear">
+                <param name="ios-package" value="CacheClear" />
             </feature>
         </config-file>
 

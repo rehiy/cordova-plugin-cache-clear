@@ -8,7 +8,7 @@
 {
 }
 
-- (void)all:(CDVInvokedUrlCommand *)command;
+- (void)task:(CDVInvokedUrlCommand *)command;
 
 // retain command for async repsonses
 @property(nonatomic, strong) CDVInvokedUrlCommand *command;

@@ -7,7 +7,7 @@
 var exec = require('cordova/exec');
 
 var CacheClear = function (success, error) {
-    exec(success, error, 'CacheClear', 'all', []);
+    exec(success, error, 'CacheClear', 'task', []);
 };
 
 module.exports = CacheClear;

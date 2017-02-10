@@ -4,7 +4,7 @@
 
 @synthesize command;
 
-- (void)all:(CDVInvokedUrlCommand *)command
+- (void)task:(CDVInvokedUrlCommand *)command
 {
     NSLog(@"Cordova iOS CacheClear() called.");
 
