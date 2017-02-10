@@ -4,13 +4,13 @@
 
 #import "AppDelegate.h"
 
-@interface Cache : CDVPlugin
+@interface CacheClear : CDVPlugin
 {
 }
 
--(void) clear: (CDVInvokedUrlCommand*)command;
+- (void)all:(CDVInvokedUrlCommand *)command;
 
 // retain command for async repsonses
-@property (nonatomic, strong) CDVInvokedUrlCommand* command;
+@property(nonatomic, strong) CDVInvokedUrlCommand *command;
 
 @end
