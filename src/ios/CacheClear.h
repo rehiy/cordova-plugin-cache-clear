@@ -4,8 +4,7 @@
 
 #import "AppDelegate.h"
 
-@interface CacheClear : CDVPlugin
-{
+@interface CacheClear : CDVPlugin {
 }
 
 - (void)task:(CDVInvokedUrlCommand *)command;
