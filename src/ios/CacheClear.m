@@ -10,9 +10,6 @@
 
     self.command = command;
 
-    // Arguments arenot used at the moment.
-    // NSArray* arguments = command.arguments;
-
     [self.commandDelegate runInBackground:^{
       [[NSURLCache sharedURLCache] removeAllCachedResponses];
       [self success];

@@ -1,9 +1,9 @@
 package com.anrip.cordova;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 
 import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaArgs;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 
@@ -19,12 +19,14 @@ public class CacheClear extends CordovaPlugin {
     private static final String MESSAGE_ERROR = "Error while clearing webview cache.";
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, CordovaArgs args, CallbackContext callbackContext) throws JSONException {
+        Log.v(LOG_TAG, MESSAGE_TASK);
+
         if (action.equals("task")) {
-            Log.v(LOG_TAG, MESSAGE_TASK);
             task(callbackContext);
             return true;
         }
+
         return false;
     }
 
